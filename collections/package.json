@@ -1,0 +1,15 @@
+{
+  "name": "collections",
+  "version": "0.0.0",
+  "description": "Implementations of Bad, Stack, Queues using linked lists",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require should --reporter spec --ui bdd --recursive"
+  },
+  "author": "Scott G. Reynolds",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+}
