@@ -18,7 +18,3 @@ Bag.prototype.add = function(item) {
 Bag.prototype.size = function() {
     return this._linkedList.size();
 }
-
-// Bag.prototype.iterator = function(){
-//     return this._linkedList.iterator();
-// }

@@ -1,0 +1,4 @@
+git status
+git add .
+git commit -m 'Collections JS started'[master 5e8e3a0] Collections JS started
+git push -u origin master
