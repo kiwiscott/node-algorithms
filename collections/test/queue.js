@@ -9,11 +9,12 @@ describe('Queue Iterator', function() {
         b.enqueue(2);
         b.enqueue(3);
         var count = 0;
-        while (b.iterator.hasNext()) {
+        var i = b.iterator();
+        while (i.hasNext()) {
             var value = i.next();
             value.should.equal(++count);
         }
-        while (b.iterator.hasNext()) {
+        while (i.hasNext()) {
             var value = i.next();
             value.should.equal(++count);
         }
@@ -23,17 +24,17 @@ describe('Queue Iterator', function() {
 
     it('Should throw an error if the collection is added to while iterating', function(done) {
         var b = new collections.Queue();
-        for (var i = 0; i < 10; i++) {
+        for (var i = 1; i <= 10; i++) {
             b.enqueue(i);
         }
 
         var count = 0;
 
         var addWhileIterating = function() {
-            while (b.iterator.hasNext()) {
+            var i = b.iterator();
+            while (i.hasNext()) {
                 if (count == 5) b.enqueue(5);
-                var value = i.next();
-                value.should.equal(++count);
+                i.next();
             }
         };
 
@@ -50,10 +51,10 @@ describe('Queue Iterator', function() {
         var count = 0;
 
         var removeWhileIterating = function() {
-            while (b.iterator.hasNext()) {
+            var i = b.iterator();
+            while (i.hasNext()) {
                 if (count == 5) b.dequeue();
-                var value = i.next();
-                value.should.equal(++count);
+                i.next();
             }
         };
         should(removeWhileIterating()).throw;
@@ -67,11 +68,16 @@ describe('Queue Iterator', function() {
         b.enqueue(2);
         b.enqueue(3);
         var count = 0;
-        while (b.iterator.hasNext()) {
+
+        var i = b.iterator();
+        while (i.hasNext()) {
             var value = i.next();
             value.should.equal(++count);
         }
-        while (b.iterator.hasNext()) {
+
+        i = b.iterator();
+        count =0;
+        while (i.hasNext()) {
             var value = i.next();
             value.should.equal(++count);
         }

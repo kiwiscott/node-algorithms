@@ -1,7 +1,6 @@
 'use strict';
 
 var DoublyLinkedNode = require("./doubleNode");
-var NodeIterator = require("./nodeIterator");
 module.exports = LinkedList;
 
 function LinkedList() {
@@ -97,14 +96,6 @@ LinkedList.prototype.getNodeByIndex = function(index) {
         currentIndex++;
     }
 }
-
-LinkedList.prototype.iterator = function() {
-    var that = this;
-    return new NodeIterator(this._root, function() {
-        return that.size();
-    });
-}
-
 LinkedList.prototype._insertNewLast = function(item) {
     var newNode = new DoublyLinkedNode(item);
     if (this._root === null) {

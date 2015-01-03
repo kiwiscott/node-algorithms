@@ -1,0 +1,29 @@
+--Running time of the 8000 values is 51.1 Seconds
+
+lg(T(N)) = 3 lg N + lg a
+
+T(N) = running time for a givien size
+N = size of the set
+a = constant
+
+this is represented as 
+
+T(N) = aN^3 (N^3 is N cubed) 
+
+Given 8000 take 51.1 Seconds
+
+T(8000) = 51.1 = a8000^3
+therefore
+a = 51.1 / 8000^3
+a = 0.0000000000998
+a = 9.98e-11
+
+T(8000) = 51.0976 = 9.98e-11 * 8000^3
+
+so since a is te constant
+
+T(16000) = 408.7808 =  9.98e-11 * 16000^3
+
+JS
+t = 9.98e-11 * Math.pow(16000,3)
+

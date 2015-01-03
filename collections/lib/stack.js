@@ -1,11 +1,11 @@
 'use strict';
 
 var linkedList = require("./linkedList")
+var nodeIterator = require("./nodeIterator");
 module.exports = Stack;
 
 function Stack() {
     this._linkedList = new linkedList();
-    this.iterator = this._linkedList.iterator();
 }
 
 Stack.prototype.push = function(item) {
@@ -29,6 +29,6 @@ Stack.prototype.size = function() {
     return this._linkedList.size();
 };
 
-// Stack.prototype.iterator = function() {
-//     return this._linkedList.iterator();
-// }
+Stack.prototype.iterator = function() {
+      return new nodeIterator(this._linkedList);
+}

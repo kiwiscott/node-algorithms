@@ -3,6 +3,35 @@
 var collections = require('./../index.js');
 var should = require('should');
 
+describe('Bag Ramdom Iterator', function() {
+    it('Should be able to iterate through the collection', function(done) {
+        var b = new collections.Bag();
+        b.add(1);
+        b.add(2);
+        b.add(3);
+        var count = 0;
+        var i = b.iterator();
+
+        while (i.hasNext()) {
+            if (count == 20) break;
+            count++;
+            i.next();
+        }
+        count.should.equal(3);
+
+        count = 0;
+        i = b.iterator();
+        while (i.hasNext()) {
+            if (count == 20) break;
+            count++;
+            i.next();
+        }
+        count.should.equal(3);
+
+        done();
+    });
+});
+
 describe('Bag', function() {
     it('New Bag should be empty', function(done) {
         var b = new collections.Bag();

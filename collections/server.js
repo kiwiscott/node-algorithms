@@ -1,16 +1,18 @@
 var collections = require("./index.js");
 
-var b = new collections.Queue();
-b.enqueue(1);
-b.enqueue(2);
-b.enqueue(3);
+
+var b = new collections.Bag();
+b.add(1);
+b.add(2);
+b.add(3);
 var count = 0;
-while (b.iterator.hasNext()) {
-    var value = i.next();
+
+var i = b.iterator;
+while (i.hasNext()) {
+    count++;
+    i.next();
 }
-while (b.iterator.hasNext()) {
-    var value = i.next();
-}
+
 
 // var s = ""; 
 // var stack = new collections.Stack();

@@ -4,8 +4,8 @@ var exR1 = function(n) {
 };
 
 var mystery = function(a, b) {
-    if (b == 0) return 1;
-    if (b % 2 == 0) return mystery(a * a, Math.floor(b / 2));
+    if (b === 0) return 1;
+    if (b % 2 === 0) return mystery(a * a, Math.floor(b / 2));
     return mystery(a * a, Math.floor(b / 2)) * a;
 }
 

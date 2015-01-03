@@ -10,10 +10,10 @@ var async = require('async')
 var whiteListFile = process.argv[2];
 var valuesForTestingFile = process.argv[3];
 
-var donedone = function(err, result) {
+var donedone = function (err, result) {
     console.log('Done Done')
-    //console.log(err)
-    //console.log(result)
+        //console.log(err)
+        //console.log(result)
 };
 
 function sortedAndDistinct(dataArray) {
@@ -38,7 +38,7 @@ function readFile(fileName, funcLine, funcEnd) {
     var dataArray = [];
     var remaining = '';
 
-    input.on('data', function(data) {
+    input.on('data', function (data) {
         remaining += data;
         var index = remaining.indexOf('\n');
         var last = 0;
@@ -51,14 +51,14 @@ function readFile(fileName, funcLine, funcEnd) {
         remaining = remaining.substring(last);
     });
 
-    input.on('end', function(data) {
+    input.on('end', function (data) {
         funcEnd()
     });
 }
 
 var start = process.hrtime();
 
-var elapsed_time = function(note) {
+var elapsed_time = function (note) {
     var precision = 3; // 3 decimal places
     var elapsed = process.hrtime(start)[1] / 1000000; // divide by a million to get nano to milli
     console.log(process.hrtime(start)[0] + " s, " + elapsed.toFixed(precision) + " ms - " + note); // print message + time
@@ -68,45 +68,45 @@ var elapsed_time = function(note) {
 
 
 async.waterfall([ // [1]
-    function(next) {
+    function (next) {
         elapsed_time('starting')
         next(null);
     },
-    function(next) {
+    function (next) {
         var dataArray = [];
         readFile(whiteListFile,
-            function(line) {
+            function (line) {
                 dataArray.push(line);
             },
-            function() {
+            function () {
                 var arrayForWhite = sortedAndDistinct(dataArray);
                 var wl = new WhiteList(dataArray);
                 next(null, wl)
             }
         );
     },
-    function(whitelist, next) {
+    function (whitelist, next) {
         elapsed_time('got whitelist')
         next(null, whitelist);
     },
-    function(whitelist, next) {
+    function (whitelist, next) {
         var dataArray = [];
         readFile(valuesForTestingFile,
-            function(line) {
+            function (line) {
                 if (whitelist.isAllowed(line)) {
                     dataArray.push(line);
                 }
             },
-            function() {
+            function () {
                 next(null, dataArray);
             }
         );
     },
-    function(dataArray, next) {
+    function (dataArray, next) {
         elapsed_time('got list of results')
         next(null, dataArray);
     },
-    function(dataArray, next) {
+    function (dataArray, next) {
         var invalidValues = sortedAndDistinct(dataArray);
         next(null, invalidValues);
     }
