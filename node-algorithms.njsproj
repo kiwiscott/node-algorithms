@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42bc9adc-1c14-4888-942b-b67bbdfa10b0}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>threesum\server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>node-algorithms</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="git.txt" />
+    <Compile Include="server.js" />
+    <Content Include="binarySearch\package.json" />
+    <Compile Include="binarySearch\binarySearch.js" />
+    <Content Include="collections\package.json" />
+    <Compile Include="collections\index.js" />
+    <Compile Include="collections\server.js" />
+    <Content Include="fragments\tobe.txt" />
+    <Compile Include="fragments\apple.js" />
+    <Compile Include="fragments\arrayResizing.js" />
+    <Compile Include="fragments\circularString.js" />
+    <Compile Include="fragments\dice.js" />
+    <Compile Include="fragments\linkedList.js" />
+    <Compile Include="fragments\productOfInts.js" />
+    <Compile Include="fragments\productOfThree.js" />
+    <Content Include="threesum\math.txt" />
+    <Compile Include="threesum\server.js" />
+    <Content Include="whitelist\package.json" />
+    <Compile Include="whitelist\server.js" />
+    <Compile Include="whitelist\serverRandMatch.js" />
+    <Compile Include="whitelist\whitelist.js" />
+    <Compile Include="binarySearch\test\searchTest.js" />
+    <Compile Include="collections\lib\bag.js" />
+    <Compile Include="collections\lib\doubleNode.js" />
+    <Compile Include="collections\lib\linkedList.1.js" />
+    <Compile Include="collections\lib\linkedList.js" />
+    <Compile Include="collections\lib\nodeIterator.js" />
+    <Compile Include="collections\lib\queue.js" />
+    <Compile Include="collections\lib\randomIterator.js" />
+    <Compile Include="collections\lib\stack.js" />
+    <Compile Include="collections\test\bag.js" />
+    <Compile Include="collections\test\queue.js" />
+    <Compile Include="collections\test\stack.js" />
+    <Compile Include="whitelist\test\test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="binarySearch" />
+    <Folder Include="binarySearch\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha" />
+    <Folder Include="binarySearch\node_modules\mocha\bin" />
+    <Folder Include="binarySearch\node_modules\mocha\images" />
+    <Folder Include="binarySearch\node_modules\mocha\lib" />
+    <Folder Include="binarySearch\node_modules\mocha\lib\browser" />
+    <Folder Include="binarySearch\node_modules\mocha\lib\interfaces" />
+    <Folder Include="binarySearch\node_modules\mocha\lib\reporters" />
+    <Folder Include="binarySearch\node_modules\mocha\lib\reporters\templates" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\commander" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\debug" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\debug\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\debug\node_modules\ms" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\diff" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\escape-string-regexp" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\examples" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\graceful-fs" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\graceful-fs\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\inherits" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\lib" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\node_modules\minimatch\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\glob\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\growl" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\growl\lib" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\bin" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\lib" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\lib\nodes" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules\commander" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules\commander\lib" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules\mkdirp" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules\mkdirp\examples" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\node_modules\mkdirp\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\jade\testing" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\bin" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\examples" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\node_modules" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\node_modules\minimist" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\example" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\test" />
+    <Folder Include="binarySearch\node_modules\mocha\node_modules\mkdirp\test" />
+    <Folder Include="binarySearch\node_modules\should" />
+    <Folder Include="binarySearch\node_modules\should\lib" />
+    <Folder Include="binarySearch\node_modules\should\lib\ext" />
+    <Folder Include="binarySearch\node_modules\should\node_modules" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-equal" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-equal\node_modules" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-equal\node_modules\should-type" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-format" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-format\node_modules" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-format\node_modules\should-type" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-format\tests" />
+    <Folder Include="binarySearch\node_modules\should\node_modules\should-format\tests\browser" />
+    <Folder Include="binarySearch\test" />
+    <Folder Include="collections" />
+    <Folder Include="collections\lib" />
+    <Folder Include="collections\node_modules" />
+    <Folder Include="collections\node_modules\mocha" />
+    <Folder Include="collections\node_modules\mocha\bin" />
+    <Folder Include="collections\node_modules\mocha\images" />
+    <Folder Include="collections\node_modules\mocha\lib" />
+    <Folder Include="collections\node_modules\mocha\lib\browser" />
+    <Folder Include="collections\node_modules\mocha\lib\interfaces" />
+    <Folder Include="collections\node_modules\mocha\lib\reporters" />
+    <Folder Include="collections\node_modules\mocha\lib\reporters\templates" />
+    <Folder Include="collections\node_modules\mocha\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\commander" />
+    <Folder Include="collections\node_modules\mocha\node_modules\debug" />
+    <Folder Include="collections\node_modules\mocha\node_modules\debug\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\debug\node_modules\ms" />
+    <Folder Include="collections\node_modules\mocha\node_modules\diff" />
+    <Folder Include="collections\node_modules\mocha\node_modules\escape-string-regexp" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\examples" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\graceful-fs" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\graceful-fs\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\inherits" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\lib" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\node_modules\minimatch\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\glob\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\growl" />
+    <Folder Include="collections\node_modules\mocha\node_modules\growl\lib" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\bin" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\lib" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\lib\nodes" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules\commander" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules\commander\lib" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules\mkdirp" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules\mkdirp\examples" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\node_modules\mkdirp\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\jade\testing" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\bin" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\examples" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\node_modules" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\node_modules\minimist" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\example" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\test" />
+    <Folder Include="collections\node_modules\mocha\node_modules\mkdirp\test" />
+    <Folder Include="collections\node_modules\should" />
+    <Folder Include="collections\node_modules\should\lib" />
+    <Folder Include="collections\node_modules\should\lib\ext" />
+    <Folder Include="collections\node_modules\should\node_modules" />
+    <Folder Include="collections\node_modules\should\node_modules\should-equal" />
+    <Folder Include="collections\node_modules\should\node_modules\should-equal\node_modules" />
+    <Folder Include="collections\node_modules\should\node_modules\should-equal\node_modules\should-type" />
+    <Folder Include="collections\node_modules\should\node_modules\should-format" />
+    <Folder Include="collections\node_modules\should\node_modules\should-format\node_modules" />
+    <Folder Include="collections\node_modules\should\node_modules\should-format\node_modules\should-type" />
+    <Folder Include="collections\node_modules\should\node_modules\should-format\tests" />
+    <Folder Include="collections\node_modules\should\node_modules\should-format\tests\browser" />
+    <Folder Include="collections\test" />
+    <Folder Include="fragments" />
+    <Folder Include="threesum" />
+    <Folder Include="whitelist" />
+    <Folder Include="whitelist\node_modules" />
+    <Folder Include="whitelist\node_modules\async" />
+    <Folder Include="whitelist\node_modules\async\lib" />
+    <Folder Include="whitelist\node_modules\mocha" />
+    <Folder Include="whitelist\node_modules\mocha\bin" />
+    <Folder Include="whitelist\node_modules\mocha\images" />
+    <Folder Include="whitelist\node_modules\mocha\lib" />
+    <Folder Include="whitelist\node_modules\mocha\lib\browser" />
+    <Folder Include="whitelist\node_modules\mocha\lib\interfaces" />
+    <Folder Include="whitelist\node_modules\mocha\lib\reporters" />
+    <Folder Include="whitelist\node_modules\mocha\lib\reporters\templates" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\commander" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\debug" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\debug\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\debug\node_modules\ms" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\diff" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\escape-string-regexp" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\examples" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\graceful-fs" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\graceful-fs\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\inherits" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\lib" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\node_modules\sigmund\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\node_modules\minimatch\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\glob\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\growl" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\growl\lib" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\bin" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\lib" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\lib\nodes" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules\commander" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules\commander\lib" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules\mkdirp" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules\mkdirp\examples" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\node_modules\mkdirp\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\jade\testing" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\bin" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\examples" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\node_modules" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\node_modules\minimist" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\example" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\node_modules\minimist\test" />
+    <Folder Include="whitelist\node_modules\mocha\node_modules\mkdirp\test" />
+    <Folder Include="whitelist\node_modules\should" />
+    <Folder Include="whitelist\node_modules\should\lib" />
+    <Folder Include="whitelist\node_modules\should\lib\ext" />
+    <Folder Include="whitelist\node_modules\should\node_modules" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-equal" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-equal\node_modules" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-equal\node_modules\should-type" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-format" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-format\node_modules" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-format\node_modules\should-type" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-format\tests" />
+    <Folder Include="whitelist\node_modules\should\node_modules\should-format\tests\browser" />
+    <Folder Include="whitelist\test" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -6,29 +6,19 @@ var fs = require("fs");
 var filename = process.argv[2];
 var start = process.hrtime();
 
-for (var i = 250; true; i += 250) {
 
-    var ints = [];
-    for (var j = 0; j < i; j++) {
-        ints.push(Math.floor(Math.random() * 1000000));
-    }
-    var count = threesum(ints);
-    elapsed_time(i + ' : ' + count);
-}
-
-
-//console.log(filename)
-// elapsed_time('Reading File')
-// var ints = readInts(filename);
-// elapsed_time('Adding :' + ints.length)
-// var count = threesum(ints);
-// elapsed_time('Found : ' + count)
+console.log(filename)
+elapsed_time('Reading File')
+var ints = readInts(filename);
+elapsed_time('Adding :' + ints.length)
+var count = threesum(ints);
+elapsed_time('Found : ' + count)
 
 ///////////////////////////////////////////////////////////////////////////////
 function threesum(a) {
     var n = a.length;
     var cnt = 0;
-
+    
     for (var i = 0; i < n; i++) {
         for (var j = i + 1; j < n; j++) {
             for (var k = j + 1; k < n; k++) {
@@ -43,7 +33,7 @@ function threesum(a) {
 
 function readInts(fileName) {
     var contents = fs.readFileSync(fileName).toString();
-
+    
     var values = contents.split("\n");
     var result = [];
     for (var i = 0; i < values.length; i++) {
